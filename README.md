@@ -35,4 +35,31 @@ You can check if there is a volume created for the EC2 instance by going to the 
 ![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/6c5b1db0-db97-483d-b5af-ec9ed84bdffe)
 
 3. Go to the EC2 dashboard, click on Snapshots, and create the snapshots.
-- What is Snapshots: In Amazon Web Services (AWS), snapshots are point-in-time copies of Amazon Elastic Block Store (EBS) volumes. These snapshots capture the exact state and data of an EBS volume at the moment the snapshot is initiated. Snapshots are stored in Amazon Simple Storage Service (S3) and are used for backups, to replicate data across regions, or to scale vertically by creating new EBS volumes from snapshots.
+- **What is Snapshots:** In Amazon Web Services (AWS), snapshots are point-in-time copies of Amazon Elastic Block Store (EBS) volumes. These snapshots capture the exact state and data of an EBS volume at the moment the snapshot is initiated. Snapshots are stored in Amazon Simple Storage Service (S3) and are used for backups, to replicate data across regions, or to scale vertically by creating new EBS volumes from snapshots.
+
+![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/9cbe3d4a-e5c8-498e-9f04-e5184f0098f0)
+![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/cf8b7337-8185-4320-823b-1264bddb4ffa)
+
+Now select the volume.Scroll down and click on "Create Snapshot".
+
+![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/bda5204a-8c80-4417-a346-172951fdeec9)
+![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/bd12fa81-7faf-45e7-b44b-ae519ee26f70)
+
+Snapshot is created.
+
+![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/d40ce9d8-8fc9-4f19-80ff-88ee485b99f4)
+
+Here, we have created a snapshot, and, for example, a developer wants to delete the EC2 instance, volumes, and snapshots. However, they only delete the EC2 instance and forget about the snapshot. They just terminate the EC2 instance, and although the volume gets deleted, the snapshots remain as they are. In such cases, we can use a Lambda function.
+
+4. Navigate to the Lambda functions and create a function for cost optimization. Click on 'Create function'.
+
+![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/d79a0891-7607-4c4a-b102-5bbb7dc482b6)
+
+Provide the function name and select the Python runtime.Click on "Create Function"
+
+![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/044f764a-b940-4f55-8159-3b33ed4b6a78)
+![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/e2559f77-da7a-44ac-b039-b11b123ef549)
+
+5. Copy the code provided below and paste it into the 'Code Source' section in lambda_function.py.
+
+
