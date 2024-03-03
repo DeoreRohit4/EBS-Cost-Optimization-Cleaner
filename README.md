@@ -1,4 +1,4 @@
-![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/8fe3ee42-a60b-4261-b908-1c0b43e10494)# EBS-Cost-Optimization-Cleaner
+# EBS-Cost-Optimization-Cleaner
 Lambda function that identifies EBS snapshots no longer associated with any active EC2 instance and deletes them to save on storage costs.
 
 ## Lambda Function Working:
