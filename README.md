@@ -30,6 +30,5 @@ Let's start,
 Create an EC2 instance, and we will create snapshots from the volume of the EC2 instance.
 
 You can check if there is a volume created for the EC2 instance by going to the EC2 dashboard and clicking on 'Volumes'. There, you will be able to see the volume created for the instance we just created.
-
- https://rohitexplainstech.hashnode.dev/navigating-aws-cost-optimization-an-in-depth-guide-day-12
+![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/508983a6-a183-4dee-89ff-a33e08f9c779)
 
