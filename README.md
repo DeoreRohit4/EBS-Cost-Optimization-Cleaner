@@ -30,5 +30,9 @@ Let's start,
 Create an EC2 instance, and we will create snapshots from the volume of the EC2 instance.
 
 You can check if there is a volume created for the EC2 instance by going to the EC2 dashboard and clicking on 'Volumes'. There, you will be able to see the volume created for the instance we just created.
-![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/508983a6-a183-4dee-89ff-a33e08f9c779)
 
+![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/508983a6-a183-4dee-89ff-a33e08f9c779)
+![image](https://github.com/DeoreRohit4/EBS-Cost-Optimization-Cleaner/assets/102886808/6c5b1db0-db97-483d-b5af-ec9ed84bdffe)
+
+3. Go to the EC2 dashboard, click on Snapshots, and create the snapshots.
+- What is Snapshots: In Amazon Web Services (AWS), snapshots are point-in-time copies of Amazon Elastic Block Store (EBS) volumes. These snapshots capture the exact state and data of an EBS volume at the moment the snapshot is initiated. Snapshots are stored in Amazon Simple Storage Service (S3) and are used for backups, to replicate data across regions, or to scale vertically by creating new EBS volumes from snapshots.
