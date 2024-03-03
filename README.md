@@ -16,3 +16,8 @@ The function performs the following actions:
 ## Purpose
 
 This function aids in cleaning up unnecessary EBS snapshots that are not attached to any volume or whose volumes are not attached to any running instances. It helps manage costs and maintain a tidy AWS environment by removing unneeded snapshots that could otherwise accumulate over time.
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+## If you want to gain hands-on experience with the project, here is an explanation of each step.
+
