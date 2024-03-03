@@ -17,7 +17,13 @@ The function performs the following actions:
 
 This function aids in cleaning up unnecessary EBS snapshots that are not attached to any volume or whose volumes are not attached to any running instances. It helps manage costs and maintain a tidy AWS environment by removing unneeded snapshots that could otherwise accumulate over time.
 
-# -----------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------
 
 # If you want to gain hands-on experience with the project, here is an explanation of each step.
+
+Let's start,
+
+1. Create an EC2 instance, and we will create snapshots from the volume of the EC2 instance.
+
+2. You can check if there is a volume created for the EC2 instance by going to the EC2 dashboard and clicking on 'Volumes'. There, you will be able to see the volume created for the instance we just created.
 
